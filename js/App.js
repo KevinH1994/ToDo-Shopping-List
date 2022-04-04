@@ -3,6 +3,8 @@ class App {
   static gruppenListe = []
   static aktiveGruppe = null
   static meldungenAusgeben = true
+  static einkaufenAufgeklappt = true
+  static erledigtAufgeklappt = false
 
   static gruppeFinden(gruppenId) {
     const gefundeneGruppen = this.gruppenListe.filter((gruppe) => gruppe.id == gruppenId)
@@ -101,7 +103,7 @@ class App {
   static informieren(nachricht, istWarnung) {
     if (this.meldungenAusgeben) {
       if (istWarnung) {
-        console.warn(nachricht)
+        console.log(nachricht)
       } else {
         console.debug(nachricht)
         this.speichern()
