@@ -1,13 +1,8 @@
 # Einkaufsliste React-Code
 Dieses Repository enthält den React-Code für die Einkaufsliste, welche im Modul "Grundlagen der Programmierung" des Kurses "Mobile App Development" entwickelt wird.
 
-Die einzelnen Entwicklungsschritte sind in den Dateien "lektion1.md" bis "lektion7.md" enthalten.
+Hay ich bin Kevin Hering und 27 jahre alt,
+dies ist mein erste Projekt was ich mit Javascript und React erstellt habe, in einem Online Kurs des Syntaxinstitutes.
 
-Die Aufgabe der Kursteilnehmer:innen ist es, den React-Code der Einkaufsliste jeden Tag ein wenig weiterzuentwickeln, um das Datenmodell mit dem HTML-UI zu "verheiraten".
-
-[Aufgaben Lektion 1](lektion1.md)  
-[Aufgaben Lektion 1a](lektion1a.md)  
-[Aufgaben Lektion 1b](lektion1b.md)  
-[Aufgaben Lektion 2a](lektion2a.md)  
-[Aufgaben Lektion 2b](lektion2b.md)    
+Hoffe euch gefallen meine Anfänge in dem bereich des Programmierens. :) 
 
