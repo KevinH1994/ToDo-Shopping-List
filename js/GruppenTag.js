@@ -10,7 +10,7 @@ class GruppenTag extends React.Component {
   }
 
   /**
-   * Artikelentfernen wird dafür benutzt um Eizelne Artikel aus den Gruppen zu Löschen.
+   * Artikelentfernen wird dafür benutzt um Eizelneartikel aus den Gruppen zu Löschen .
    * @param artikel
    */
   artikelEntfernen = (artikel) => {

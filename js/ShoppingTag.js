@@ -65,11 +65,9 @@ class ShoppingTag extends React.Component {
       <div>
         <header>
           <h1>Einkaufsliste</h1>
-          <nav>
-            <label htmlFor="eingabe">Artikel hinzufügen:</label><br/>
+          <nav className="Artikel">
             <input type="text" id="eingabe" placeholder="Artikel hinzufügen"/>
-            <button className="material-icons" onClick={() => this.artikelHinzufuegen()}>add_circle</button>
-
+            <button className="material-icons Plus" onClick={() => this.artikelHinzufuegen()}>add_circle</button>
           </nav>
         </header>
         <hr/>

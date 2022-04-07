@@ -5,14 +5,19 @@
     background-position: center center;
 
 }
-#container {
-    opacity: 75%;
 
-}
 :root {
     --mdc-theme-primary: #33691E;
     --mdc-theme-secondary: #ffffff;
 }
+header input[type="text"]{
+color: #2f6627;
+    margin-left: 4.5rem;
+    width: 8rem;
+    height: 1rem;
+
+}
+
 dt {
     background-color: #7CB342;
     color: var(--mdc-theme-on-primary);
@@ -21,22 +26,24 @@ dt {
 dd{
     color: #fafafa;
 }
-h2{
-    color: black;
-    background-color: var(--mdc-theme-on-primary);
 
-}
+
 
 .aktiv { background-color: #18420a
 }
 .aktiv{opacity: 90%}
 .inaktiv { background-color: #7CB342 }
 .inaktiv{opacity: 75%}
-
-h1, h2 {
+h1{
     color: black;
     text-align: center;
     margin: 0;
+}
+h2 {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    background-color: var(--mdc-theme-on-primary);
 
 
 }
@@ -44,6 +51,8 @@ i.material-icons {
     cursor: pointer;
 }
 button.material-icons {
+    background-color:#44c767;
+    color:#ffffff;
     font-size: inherit;
     vertical-align: bottom
 }
@@ -52,6 +61,7 @@ button.material-icons {
     margin-right: 8px;
 }
 dt {
+    color: #fafafa;
     display: flex;
     font-weight: 500;
     padding: 3px 5px;
@@ -61,6 +71,7 @@ dt span {
 }
 
 dd {
+    color: black;
     display: flex;
     margin-left: 0;
 }
@@ -99,4 +110,21 @@ footer {
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
 }
+button[id="Gruppe"]{
+    background-color:#44c767;
+    border-radius:28px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:17px;
+    padding:5px 100px;
+    text-decoration:none;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+
+}
+
 
