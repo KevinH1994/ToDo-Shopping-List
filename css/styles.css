@@ -1,29 +1,44 @@
 #root {
     width: 20rem;
-    background-image: url("../img/markt.jpg");
+    background-image: url("../img/supermarkt 2.jpeg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
+
 }
 #container {
-    opacity: 85%;
+    opacity: 75%;
+
 }
 :root {
     --mdc-theme-primary: #33691E;
-    --mdc-theme-secondary: #827717;
+    --mdc-theme-secondary: #ffffff;
 }
 dt {
     background-color: #7CB342;
     color: var(--mdc-theme-on-primary);
+    text-align: center;
 }
-h2, dd {
+dd{
+    color: #fafafa;
+}
+h2{
+    color: black;
     background-color: var(--mdc-theme-on-primary);
+
 }
 
-.aktiv { background-color: #4b81d6 }
+.aktiv { background-color: #18420a
+}
+.aktiv{opacity: 90%}
 .inaktiv { background-color: #7CB342 }
-h1, h2, dl {
+.inaktiv{opacity: 75%}
+
+h1, h2 {
+    color: black;
+    text-align: center;
     margin: 0;
+
+
 }
 i.material-icons {
     cursor: pointer;
@@ -33,7 +48,7 @@ button.material-icons {
     vertical-align: bottom
 }
 [type="checkbox"] {
-    vertical-align: top;
+    vertical-align: middle;
     margin-right: 8px;
 }
 dt {
