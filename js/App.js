@@ -44,7 +44,7 @@ class App {
     if (gruppe) {
       let index = this.gruppenListe.indexOf(gruppe)
       // alle Artikel dieser Gruppe entfernen
-      gruppe.artikelListe.map((artikel) => gruppe.artikelEntfernen(artikel))
+      gruppe.artikelListe.map((artikel) => gruppe.artikelEntfernen(artikel.name))
       this.gruppenListe.splice(index, 1)
       App.informieren(`Gruppe "${gruppe.name}" entfernt`)
     } else {

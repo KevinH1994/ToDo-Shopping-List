@@ -4,12 +4,15 @@ class GruppenDialog extends React.Component {
     super(props);
     this.state = {
       showDialog: this.props.visible,
-      gruppenListe: this.props.gruppenListe,
-    };
+      gruppenListe: App.gruppenListe,
+    };console.debug(App.gruppenListe)
   }
 
+  /**
+   * Mit GruppenHinzufügen kann man im Gruppendialog Tag neue Gruppenhinzufügen.
+   */
   gruppeHinzufuegen = () => {
-    let eingabe = document.getElementById("eingabe")
+    let eingabe = document.getElementById("Enter")
     if (eingabe.value.trim().length > 0) {
       App.gruppeHinzufuegen(eingabe.value)
       this.setState({gruppenListe: App.gruppenListe})
@@ -17,23 +20,27 @@ class GruppenDialog extends React.Component {
     eingabe.value = ""
     eingabe.focus()
   }
-
+  
   gruppeBearbeiten = (gruppe) => {
-    let eingabe = document.getElementById("eingabe")
-    if (eingabe.value.trim().length > 0) {
-      App.gruppeUmbenennen(gruppe, eingabe.value)
+    let bearbeiten = document.getElementById("bearbeiten")
+    if (bearbeiten.value.trim().length > 0) {
+      App.gruppeUmbenennen(gruppe, bearbeiten.value)
       this.setState({gruppenListe: App.gruppenListe})
     }
-    eingabe.value = ""
-    eingabe.focus()
+    bearbeiten.value = ""
+    bearbeiten.focus()
   }
-
+  /**
+   * Gruppe entfernen ist dafür da um gruppen zu Löschen, die nicht mehr benötigt werden
+   * @param gruppe
+   */
   gruppeEntfernen = (gruppe) => {
     App.gruppeEntfernen(gruppe)
     this.setState({gruppenListe: App.gruppenListe})
   }
 
   render() {
+    
     return (
       <div className={'mdc-dialog ' + (this.props.visible ? 'mdc-dialog--open' : '')}>
         <div className="mdc-dialog__container">
@@ -42,7 +49,7 @@ class GruppenDialog extends React.Component {
 
             <div className="mdc-dialog__content">
               <nav>
-                <input type="text" id="eingabe" placeholder="Gruppe hinzufügen"
+                <input type="text" id="Enter"  placeholder="Gruppe hinzufügen"
                        onKeyUp={event => (event.keyCode == 13) ? this.gruppeHinzufuegen() : ''}/>
                 <button className="material-icons"
                         onClick={() => this.gruppeHinzufuegen()}>add_circle</button>
@@ -50,7 +57,7 @@ class GruppenDialog extends React.Component {
               <hr/>
 
               <dl className="mdc-deprecated-list">
-                {this.state.gruppenListe.map(gruppe => (
+                {App.gruppenListe.map(gruppe => (
                   <dt key={gruppe.id}>
                     <span>{gruppe.name}</span>
                     <i className="material-icons" onClick={()=>this.gruppeBearbeiten(gruppe.id)}>
